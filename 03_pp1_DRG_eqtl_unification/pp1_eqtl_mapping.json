@@ -1,0 +1,19 @@
+{
+    "levels":
+    [
+        {
+			"RSID":"{u_rs_id}",
+			"A1":"{u_ea}",
+			"A2":"{u_ra}",
+			"BETA":"{u_beta}",
+			"MAF":"{u_eaf}",
+			"P":"{u_p}",
+                        "HUGO_GENE":"{u_probe}"
+		}
+	],
+	"service":{
+	"n":214,
+	"sep":",",
+        "trait_column":"HUGO_GENE"
+	}
+}
