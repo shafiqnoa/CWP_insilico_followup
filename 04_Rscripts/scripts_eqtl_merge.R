@@ -1,6 +1,3 @@
-
-
-
 library("data.table")
 library("R.utils")
 
@@ -62,8 +59,12 @@ all.files <- list.files()
 l <- lapply(all.files, fread, sep="\t")
 chr_merged <- rbindlist(l)
 colnames(chr_merged )[1]<- "RSID"
-fwrite(chr_merged, file="~/polyomica/projects/CWP_project/DRG_eqtl_merged/chr_merged.txt")
-
+dim(chr_merged) # 81653337; 7
+chr_merged <- chr_merged[chr_merged$MAF>=0.01,] 
+chr_merged <- chr_merged[chr_merged$NCHROBS>=(max(chr_merged$NCHROBS)*0.95),]
+chr_merged <- chr_merged[which(!duplicated(chr_merged$RSID)),]
+dim(chr_merged) #8145704; 7
+fwrite(chr_merged, file="~/polyomica/projects/CWP_project/DRG_DATA_MERGED/chr_merged.txt")
 
 
 # Merging all snps with pp0 files.
@@ -78,23 +79,11 @@ pp1_eqtlmerged_M <- merge(chr_merged, pp1_cis_M, by="RSID")
 pp1_eqtlmerged_F <- merge(chr_merged, pp1_cis_F, by="RSID")
 
 
-fwrite(pp0_eqtlmerged_MF, file="~/polyomica/projects/CWP_project/DRG_eqtl_merged/pp0_eqtlmerged_MF.csv")
-fwrite(pp0_eqtlmerged_M, file="~/polyomica/projects/CWP_project/DRG_eqtl_merged/pp0_eqtlmerged_M.csv")
-fwrite(pp0_eqtlmerged_F, file="~/polyomica/projects/CWP_project/DRG_eqtl_merged/pp0_eqtlmerged_F.csv")
-fwrite(pp1_eqtlmerged_MF, file="~/polyomica/projects/CWP_project/DRG_eqtl_merged/pp1_eqtlmerged_MF.csv")
-fwrite(pp1_eqtlmerged_M, file="~/polyomica/projects/CWP_project/DRG_eqtl_merged/pp1_eqtlmerged_M.csv")
-fwrite(pp1_eqtlmerged_F, file="~/polyomica/projects/CWP_project/DRG_eqtl_merged/pp1_eqtlmerged_F.csv")
+# Saving all data files
+fwrite(pp0_eqtlmerged_MF, file="~/polyomica/projects/CWP_project/DRG_DATA_MERGED/pp0_eqtlmerged_MF.csv")
+fwrite(pp0_eqtlmerged_M, file="~/polyomica/projects/CWP_project/DRG_DATA_MERGED/pp0_eqtlmerged_M.csv")
+fwrite(pp0_eqtlmerged_F, file="~/polyomica/projects/CWP_project/DRG_DATA_MERGED/pp0_eqtlmerged_F.csv")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+fwrite(pp1_eqtlmerged_MF, file="~/polyomica/projects/CWP_project/DRG_DATA_MERGED/pp1_eqtlmerged_MF.csv")
+fwrite(pp1_eqtlmerged_M, file="~/polyomica/projects/CWP_project/DRG_DATA_MERGED/pp1_eqtlmerged_M.csv")
+fwrite(pp1_eqtlmerged_F, file="~/polyomica/projects/CWP_project/DRG_DATA_MERGED/pp1_eqtlmerged_F.csv")
