@@ -2,7 +2,8 @@
     "levels":
     [
         {
-			"RS_ID":"{u_rs_id}",
+                	"CHR":"{u_chr}",
+	                "RS_ID":"{u_rs_id}",
 			"BP":"{u_bp}",
 			"A1":"{u_ea}",
 			"A2":"{u_ra}",
