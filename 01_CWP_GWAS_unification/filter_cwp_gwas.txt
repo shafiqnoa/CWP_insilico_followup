@@ -1,4 +1,0 @@
-INFO<0.70
-SE<=0
-BETA==0
-abs(BETA)>=2
