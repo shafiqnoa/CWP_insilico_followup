@@ -6,6 +6,8 @@
         "population":"European",
         "reference_doi":"-",
         "n_people":249843,
+        "n_cases":6914,
+        "n_controls":242929,
         "use_terms":"private",
         "frequency_source":"UKBB",
         "genomic_build":"hg19",
