@@ -11,8 +11,11 @@ pp0_cis_M <- fread("DRG_pp0_cis_M.bed.gz")
 pp0_cis_F <- fread("DRG_pp0_cis_F.bed.gz")
 # Reading pp1 files
 pp1_cis_MF <- fread("DRG_pp1_cis_MF.bed.gz")
+#dim(pp1_cis_MF)
 pp1_cis_M <- fread("DRG_pp1_cis_M.bed.gz")
+#dim(pp1_cis_M)
 pp1_cis_F <- fread("DRG_pp1_cis_F.bed.gz")
+#dim(pp1_cis_F)
 
 
 # excluding first column from the each bed files (col 1: always chrX (this is to fool tabix))
