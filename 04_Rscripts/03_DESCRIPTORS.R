@@ -28,6 +28,6 @@ complex_gwas <- descriptors[descriptors$collection==""|
                             descriptors$collection=="consortia_traits"|
                             descriptors$collection=="glycomics-igg",]
 
-dim(complex_gwas) #4391
+dim(complex_gwas) #4393
 complex_gwas <- complex_gwas[,1]
 fwrite(complex_gwas, file="complex_gwas.csv", col.names=FALSE)
