@@ -18,5 +18,6 @@
         "trait_type":"binary",
         "tissue":"blood",
         "collection":"Pain_phenotypes",
+        "comments":"There is a problem with HLA regions in regards to allele freqencies and we could not found the souce of the problem",
         "access_restrictions":["private"]
 }
