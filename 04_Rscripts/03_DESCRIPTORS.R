@@ -11,7 +11,7 @@ eqtl_gwas <- eqtl_gwas[,1]
 fwrite(eqtl_gwas, file="eqtl_gwas.csv", col.names=FALSE)
 
 
-complex_gwas <- descriptors[descriptors$collection=="Complex traits"|
+complex_gwas <- descriptors[descriptors$collection==""|
                             descriptors$collection=="Healthspan"|
                             descriptors$collection=="Cytokines"|
                             descriptors$collection=="CVD"|
@@ -30,4 +30,4 @@ complex_gwas <- descriptors[descriptors$collection=="Complex traits"|
 
 dim(complex_gwas) #4391
 complex_gwas <- complex_gwas[,1]
-fwrite(complex_gwas, file="complex_gwas.csv", colnames=FALSE)
+fwrite(complex_gwas, file="complex_gwas.csv", col.names=FALSE)
