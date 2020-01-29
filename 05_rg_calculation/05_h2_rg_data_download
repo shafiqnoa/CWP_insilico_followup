@@ -1,0 +1,9 @@
+# downloading heritablity analysis data:
+prod_psql_connect
+\copy (select * from gwas.ldsc order by gwas_id) To '/home/ubuntu/polyomica/projects/CWP_project/DESCRIPTORS/DESCRIPTORS_H2.csv' With CSV HEADER DELIMITER ',';
+
+
+# downloading rg analysis data:
+prod_psql_connect
+\copy (select * from gwas.ldsc_rg where gwas_id_1 = 1287006 or gwas_id_2 = 1287006 order by gwas_id_1) To '/home/ubuntu/polyomica/projects/CWP_project/DESCRIPTORS/DESCRIPTORS_rg_1287006.csv' With CSV DELIMITER ','  HEADER;
+
