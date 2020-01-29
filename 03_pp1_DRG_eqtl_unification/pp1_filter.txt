@@ -1,3 +1,2 @@
-MAF<=0.01
 BETA==0
 abs(BETA)>=10
