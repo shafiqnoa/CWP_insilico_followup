@@ -1,6 +1,6 @@
 {
 	"genomic_build": "hg19/GRCh37",
-	"trait_abbreviation": "DRG_F",
+	"trait_abbreviation": "pp0_DRG_F",
 	"reference_doi": "10.1016/j.celrep.2017.05.018",
 	"frequency_source": "Study",
 	"use_terms": " Permitted for non-commercial purposes and accompanying table of dataset releases can be found at https://diatchenko.lab.mcgill.ca/DRG-eQTLs/",
@@ -17,7 +17,7 @@
 	"organism": "Human",
 	"association_type": "linear",
 	"n_people": 105,
-	"trait_name": "Dorsal root ganglia(female only)",
+	"trait_name": "Dorsal root ganglia(gene level,female only)",
 	"population": "Caucasian",
 	"phenotyping_technology": "Gene expression Level",
 	"study_website_link": "https://www.sciencedirect.com/science/article/pii/S2211124717306435?via%3Dihub#ack0010",
