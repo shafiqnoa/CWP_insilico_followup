@@ -5,4 +5,3 @@ run_smrheidi_report \
 --output-dir ~/polyomica/projects/CWP_project/SMRHEIDI_COM_TRAITS \
 --output-file cwp_smrheidi_comtraits \
 --only-table
-done
