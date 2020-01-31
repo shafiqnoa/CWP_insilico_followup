@@ -1,4 +1,4 @@
-for i in {3 22}
+for i in {3,22}
 do
 ./plink  \
 --bfile /home/ubuntu/polyomica/gwas/reference/by_chr/ALL.chr${i}.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes_nodup \
