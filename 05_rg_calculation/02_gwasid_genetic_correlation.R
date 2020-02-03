@@ -20,7 +20,7 @@ complexh2 <- complexh2[complexh2$collection==""|
                          complexh2$collection=="Metabolomics"|
                          complexh2$collection=="Lipidom"|
                          complexh2$collection=="OLINK"| 
-                         complexh2$collection=="PLINK-3"|
+                         complexh2$collection=="PAIN-3"|
                          complexh2$collection=="Plasma_Glycome"|
                          complexh2$collection=="SomaLogic_2017"|
                          complexh2$collection=="UKB_GeneAtlas"| 
@@ -31,9 +31,11 @@ complexh2 <- complexh2[complexh2$collection==""|
                          complexh2$collection=="glycomics-igg",]
 
 
+complexh2$z <- complexh2$h2/complexh2$h2_se
+
 complexh2_filter <- complexh2[complexh2$n_people >10000 & 
-                                complexh2$h2 > 0 & 
-                                abs(complexh2$z) > 4 & (is.na(complexh2$n_controls)|(complexh2$n_cases>2000 &complexh2$n_controls>2000)),]
+                                complexh2$h2 > 0.001 & 
+                                abs(complexh2$z) > 3 & (is.na(complexh2$n_controls)|(complexh2$n_cases>2000 &complexh2$n_controls>2000)),]
 
 dim(complexh2_filter)
 table(complexh2_filter$collection)
