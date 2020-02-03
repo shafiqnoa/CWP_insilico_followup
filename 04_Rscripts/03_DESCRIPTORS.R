@@ -31,3 +31,12 @@ complex_gwas <- descriptors[descriptors$collection==""|
 dim(complex_gwas) #4469
 complex_gwas <- complex_gwas[,1]
 fwrite(complex_gwas, file="complex_gwas.csv", col.names=FALSE)
+
+
+
+pain_gwas_ids <- descriptors[descriptors$collection==""|descriptors$collection=="PAIN-3",]
+pain_gwas_ids <- pain_gwas_ids[,1]
+fwrite(pain_gwas_ids, file = "pain_gwas_ids.csv", col.names = FALSE)
+
+
+
