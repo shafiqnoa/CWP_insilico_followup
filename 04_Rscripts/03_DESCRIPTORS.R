@@ -10,24 +10,24 @@ dim(eqtl_gwas) #1253952
 eqtl_gwas <- eqtl_gwas[,1]
 fwrite(eqtl_gwas, file="eqtl_gwas.csv", col.names=FALSE)
 
-
 complex_gwas <- descriptors[descriptors$collection==""|
-                            descriptors$collection=="Healthspan"|
-                            descriptors$collection=="Cytokines"|
-                            descriptors$collection=="CVD"|
-                            descriptors$collection=="Metabolomics"|
-                            descriptors$collection=="Lipidom"|
-                            descriptors$collection=="OLINK"| 
-                            descriptors$collection=="PLINK-3"|
-                            descriptors$collection=="Plasma_Glycome"|
-                            descriptors$collection=="SomaLogic_2017"|
-                            descriptors$collection=="UKB_GeneAtlas"| 
-                            descriptors$collection=="UKB_GeneAtlas_v2"|
-                            descriptors$collection=="UKB_NealeLab"|
-                            descriptors$collection=="UKB_SAIGE"|
-                            descriptors$collection=="consortia_traits"|
-                            descriptors$collection=="glycomics-igg",]
+                              descriptors$collection=="Healthspan"|
+                              descriptors$collection=="Cytokines"|
+                              descriptors$collection=="CVD"|
+                              descriptors$collection=="Metabolomics"|
+                              descriptors$collection=="Lipidom"|
+                              descriptors$collection=="OLINK"| 
+                              descriptors$collection=="PAIN-3"|
+                              descriptors$collection=="Plasma_Glycome"|
+                              descriptors$collection=="SomaLogic_2017"|
+                              descriptors$collection=="UKB_GeneAtlas"| 
+                              descriptors$collection=="UKB_GeneAtlas_v2"|
+                              descriptors$collection=="UKB_NealeLab"|
+                              descriptors$collection=="UKB_SAIGE"|
+                              descriptors$collection=="consortia_traits"|
+                              descriptors$collection=="glycomics-igg",]
 
-dim(complex_gwas) #4393
+
+dim(complex_gwas) #4469
 complex_gwas <- complex_gwas[,1]
 fwrite(complex_gwas, file="complex_gwas.csv", col.names=FALSE)
