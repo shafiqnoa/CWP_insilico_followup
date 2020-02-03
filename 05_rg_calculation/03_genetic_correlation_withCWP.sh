@@ -8,7 +8,7 @@ echo $gid
 
 run_ldscore \
 --rg \
---gwas-id 1287006 \
+--gwas-id-1 1287006 \
 --gwas-id-2 $gid
 
 done
