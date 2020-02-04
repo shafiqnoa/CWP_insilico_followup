@@ -5,5 +5,5 @@ do
 --list-all \
 --show-tags /home/ubuntu/polyomica/projects/CWP_project/CWP_DATA_MAIN/cwp_index_snp.txt \
 --tag-r2 0.8 \
---out /home/ubuntu/polyomica/projects/CWP_project/VEP/tagsnps_pl
+--out /home/ubuntu/polyomica/projects/CWP_project/VEP/tagsnps_pl${i}
 done
