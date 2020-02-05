@@ -1,0 +1,3 @@
+source get_gwasid_with_locus.sh 3 49739507 /home/unustu/polyomica/projects/CWP_project/SMRHEIDI_eQTLs/rs1491985.txt
+source get_gwasid_with_locus.sh 3 130696383 /home/unustu/polyomica/projects/CWP_project/SMRHEIDI_eQTLs/rs10490825.txt
+source get_gwasid_with_locus.sh 3 19956781 /home/unustu/polyomica/projects/CWP_project/SMRHEIDI_eQTLs/rs165599.txt
