@@ -1,6 +1,6 @@
 export PROD=TRUE
 
-gs_id=$(cat ~/polyomica/projects/CWP_project/SMRHEIDI_eQTLs/smr_eqtl_id.txt)
+gs_id=$(cat ~/polyomica/projects/CWP_project/SMRHEIDI_eQTLs/rs165599.txt)
 
 for gid in $gs_id
 do
@@ -12,4 +12,3 @@ run_smrheidi \
 --snp-list ~/polyomica/projects/CWP_project/CWP_DATA_MAIN/snplist.csv \
 --version 2
 done
-

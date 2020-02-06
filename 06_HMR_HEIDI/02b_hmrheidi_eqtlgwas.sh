@@ -1,6 +1,6 @@
 export PROD=TRUE
 
-gs_id=$(cat ~/polyomica/projects/CWP_project/SMRHEIDI_eQTLs/rs165599.txt)
+gs_id=$(cat ~/polyomica/projects/CWP_project/SMRHEIDI_eQTLs/rs10490825.txt)
 
 for gid in $gs_id
 do
