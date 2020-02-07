@@ -1,4 +1,4 @@
-export PROD=TRUE
+#export PROD=TRUE
 
 run_uni_qc_rep \
 --gwas-path=/home/ubuntu/polyomica/projects/CWP_project/DRG_DATA_MERGED/pp0_eqtlmerged_MF.csv \
